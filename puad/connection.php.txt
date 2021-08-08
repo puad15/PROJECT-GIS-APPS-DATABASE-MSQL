@@ -1,0 +1,15 @@
+<?php
+closs Connection {
+	function getConnection(){
+	$host = "localhost";
+	$username = "root";
+	$pass = "";
+	$db = "db_aplikasiku1811500102";
+
+	try{
+$conn = new PDO ("mysql:host=$host;dbname=$dbname, $password");
+return $conn;
+}catch (Excetion $e){
+	echo $e->getMessage();
+	}
+}}
